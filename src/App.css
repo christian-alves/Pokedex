@@ -1,0 +1,62 @@
+body{
+  background:url('https://i0.wp.com/pinoypokemongo.com/wp-content/uploads/2018/08/pokemon-background.jpg?ssl=1');
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+}
+
+body,html {
+  height:100%;
+  width:100%;
+  overflow-y:hidden;
+}
+
+.container{
+  display:grid;
+  grid-template-columns:5% 1fr 1fr 1fr 5%;
+}
+.containerinput{
+  display:grid;
+  grid-template-columns:5% 1fr 5%;
+}
+
+.navcenter{
+  grid-column: 3/3;
+  display:flex;
+  justify-content:center;
+}
+.inputcenter{
+  grid-column: 2/2;
+  display:flex;
+  justify-content:center;
+}
+.navcenter h1{
+  text-align:center;
+  font-style:italic;
+  font-weight:300;
+  font-size:40px;
+}
+
+.hamburgerright{
+  grid-column:4/4;
+  display:flex;
+  justify-content:flex-end;
+  align-items:center
+
+
+}
+.hamburgerright img{
+  justify-content:flex-end;
+  height:60px;
+  width:60px;
+  cursor:pointer;
+}
+
+.inputcenter input{
+  border-radius:20px;
+  border:none;
+  outline:none;
+  height:50px;
+  width:100%;
+  max-width:600px;
+  padding:0 20px;
+}
