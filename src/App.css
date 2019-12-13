@@ -66,10 +66,11 @@ body,html {
   margin-top:20px;
   border:1px solid white;
   background-color:rgba(0,0,0,0.1);
-  padding:50px;
   grid-column: 3/3;
   display:block;
   justify-content:center;
   text-align: center;
+  padding:50px;
 }
+
 
