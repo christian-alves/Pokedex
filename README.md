@@ -1,11 +1,15 @@
+Para testar:
+Digite o pokemon desejado e pressione enter.
+
+DEMO: https://pokedex-react-study.herokuapp.com/
+
 TO DO:
 - Automatize search
 - Make the hamburger menu
 - Add a little more things on the functions
 
 
-Para testar:
-Digite o pokemon desejado e pressione enter.
+
 
 ## Available Scripts
 
