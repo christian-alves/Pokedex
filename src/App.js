@@ -12,7 +12,7 @@ class App extends React.Component{
 
     this.state = {
       pokemon: '',
-      types: [],
+      types:[],
       isSearched:false,
     };
   }
@@ -20,11 +20,12 @@ class App extends React.Component{
   async getPokemon(e) {
     e.preventDefault();
      const res = await fetch(
-        `https://pokeapi.co/api/v2/pokemon/${this.state.pokemon}`
+        `https://pokeapi.co/api/v2/pokemon/${this.state.pokemon}`,
       );
       const pokemon = await res.json();
       this.setState({
         pokemon: pokemon,
+        types: [this.state.pokemon.types],
         isSearched:true
       })
   }
@@ -41,10 +42,13 @@ class App extends React.Component{
     }
 
   render(){
-    let types = this.state.pokemon.types.map((item, key) =>
-    <li key={item.id}>{item.name}</li>
-    );
+
+    const types = this.state.types.map((poketype, index) => {
+      return (<li key={index}>{poketype}</li>);
+    });
+
     console.log(this.state.pokemon);
+    console.log(this.state.types)
     const isSearched = this.state.isSearched
     let Pokecard;
     if(isSearched){
